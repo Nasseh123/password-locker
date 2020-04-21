@@ -115,8 +115,29 @@ def acc_functions():
             print ('\n')
             print(f"New Credential for {new_App_Name_Entered} created")
             print ('\n')
-        elif expression:
-            pass
+            
+            # Displaying all apps
+        elif short_code=="dc":
+            list_apps=display_all_apps()
+
+            if not list_apps :
+                print("\n")
+                print("THERE IS NO APP CREDENTIAL SAVED IN YOUR ACCOUNT")
+                print("\n")
+            else:
+                print("Here's a list of all your profiles")
+                for Credential in display_all_apps():
+                    print(f"APP NAME:{Credential.app_name}")
+                    print(f"PROFILE USERNAME:{Credential.app_username}")
+                    print(f"PROFILE EMAIL:{Credential.app_email}")
+                    print(f"PROFILE PASSWORD:{Credential.app_password}")
+                    print(("-*-"*25))
+                    print("\n")
+
+
+if __name__=='__main__':
+    main()
+
         # all_Details=(new_App_Name_Entered,new_App_username_Entered,new_App_Email_Entered,new_App_password_Entered)
         # checking for existing 
         # if check_new_app_name ==search_App_credential(check_new_app_name):
@@ -132,7 +153,4 @@ def acc_functions():
         # else:
         #     while False:
         #         print(f"Credentials for {new_App_Name_Entered} were succefully stored")   
-        #         return acc_functions()
-                 
-if __name__=='__main__':
-    main()
+        #         return acc_functions()             
