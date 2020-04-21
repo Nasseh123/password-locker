@@ -94,7 +94,7 @@ def main():
                 while True:
                     # new_user_credentials=(new_username,new_password)
                     # ********************UNABLE TO SAVE USER!!!!1
-                    save_user(new_username)
+                    
                     print("Account succefully created")
                     return acc_functions()
                     
@@ -182,7 +182,9 @@ def acc_functions():
             return main()
         elif short_code=="ex":
             print ("bye...")
-            pass
+            break
+        else:
+            print("KIndly input the right keyword")
 
 
 if __name__=='__main__':
