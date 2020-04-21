@@ -103,7 +103,7 @@ def acc_functions():
     
     while True:
         print("\033[1m PROFILE CONTROLS:- "+'\033[0m'+"Use these short codes : na - Add a new appcredential, dc-Display all credential, search - find a profile, del - delete a profile, logout- logout of session, ex - exit the application")
-        print("\033[1m ACCOUNT CONTROLS:- "+'\033[0m'+"Use these short codes : acp - Change your account password, delete - Delete your account")
+        
         short_code=input().lower()
         if short_code=="na":
             print("Fill the neccessary fields below to create a new app_credential;")
