@@ -38,3 +38,25 @@ class Credential:
         for Credential in cls.app_list:
             if Credential.app_name== app_name:
                 return Credential
+    
+    @classmethod
+    def display_all_apps(cls):
+        """
+        method for returing all apps _credential 
+        """
+        return cls.app_list
+
+    # booleanchecking if userexists
+    @classmethod
+    def search_app_credentials(cls, app_Name):
+        """
+        confirm_user method that checks if a password matches a username
+        """
+        for Credential in cls.app_list:
+            if Credential.app_name == True:
+                return True
+            else:
+                return False
+        else:
+            return False
+    

@@ -53,3 +53,34 @@ class User:
             if User.username==username:
                 return True
         return False
+
+    @classmethod
+    def confirm_user(cls, userName, passwrd):
+        """
+        confirm_user method that checks if a password matches a username
+        """
+        for User in cls.user_list:
+            if User.username & User.password == True:
+                return True
+            else:
+                return False
+        else:
+            return False
+    @classmethod
+    def confirm_new(cls, userName):
+        """
+        confirm_user method that checks if a password matches a username
+        """
+        for User in cls.user_list:
+            if User.username == True:
+                return True
+            else:
+                return False
+        else:
+            return False
+    # @classmethod
+    # def login(cls)(cls,username,password)
+    # """
+    # """
+    # for user in cls.user_list:
+    #     if
