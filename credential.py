@@ -17,12 +17,11 @@ class Credential:
         """
         Credential.app_list.append(self)
 
-    def delete_credential(self):
+    def delete_app_credential(self):
 
         '''
-        delete_contact method deletes a saved contact from the contact_list
+        delete_credential method deletes a saved contact from the credential_list
         '''
-
         Credential.app_list.remove(self)
 
     @classmethod
@@ -37,7 +36,7 @@ class Credential:
         '''
         for Credential in cls.app_list:
             if Credential.app_name== app_name:
-                return Credential
+                return Credential.app_name
     
     @classmethod
     def display_all_apps(cls):
