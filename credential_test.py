@@ -69,6 +69,14 @@ class TestUSer (unittest.TestCase):
         found_credential = Credential.find_by_appname("facebook")
 
         self.assertEqual(found_credential.app_name,test_credential.app_name)
-
+    def test_generate_random_password(self):
+        """
+        test_generate_random_password to test if a user can generate a random password with a set length
+        """
+        test_app = Credential("abust","gui","abius@mail.com","dani")
+        generated_password = test_app.generate_random_password
+        test_app_password = generated_password
+        test_app.savecredentials()
+        self.assertTrue(test_app_password)
 if __name__ == '__main__':
     unittest.main()

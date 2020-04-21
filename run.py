@@ -48,6 +48,10 @@ def search_App_credentials(app_Name):
 def display_all_apps():
     return Credential.display_all_apps()
 
+def generate_random_password(length):
+    generate_random_password = Credential.generate_random_password(length)  
+    return generate_random_password
+
 def controls():
     print("\033[1m PROFILE CONTROLS:- "+'\033[0m'+"Use these short codes : na - Add a new appcredential, dc-Display all credential, search - find a profile, del - delete a profile, logout- logout of session, ex - exit the application")
     print("\033[1m ACCOUNT CONTROLS:- "+'\033[0m'+"Use these short codes : acp - Change your account password, delete - Delete your account")
@@ -178,6 +182,25 @@ def acc_functions():
                 return main()
             else:
                 print("No credentials input")
+
+        elif short_code == "gp":
+            print("Kindly enter the APP name you want to generate a password for")            
+            app_gen_passwrd = input()
+            app_to_change = search_App_credential(app_gen_passwrd)
+            if app_to_change:
+                print("Input the length of password you want:")
+                passwrd_length = int(input())
+                
+                new_passwrd = generate_random_password(passwrd_length)
+                app_to_change.app_password = new_passwrd
+                print("\n")
+                print("A New Password was Generated and has been Successfully Saved")
+                print("\n")
+                     
+            else:
+                print("\n")        
+                print("There is no app credential with That Name")
+                print("\n")
         elif short_code=="logout":
             return main()
         elif short_code=="ex":
