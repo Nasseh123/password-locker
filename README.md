@@ -7,7 +7,7 @@
 
  ## Setup/Installation Requirements
 
-> Clone [This Repository](https://github.com/git) and run the `run.py`file by executing the following commands:-
+> Clone [This Repository](https://github.com/Nasseh123/password-locker.git) and run the `run.py`file by executing the following commands:-
 > * `chmod +x run.py` then `python3.6 run.py
 
 ## Technical Requirements

@@ -78,5 +78,6 @@ class TestUSer (unittest.TestCase):
         test_app_password = generated_password
         test_app.savecredentials()
         self.assertTrue(test_app_password)
+        
 if __name__ == '__main__':
     unittest.main()
