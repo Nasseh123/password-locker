@@ -26,7 +26,7 @@
 ## Technologies Used
 
 > * Python3.6
-## Specifications
+## Specific ations
 
 | Behavior        | Input           | Outcome  |
 | ------------- |:-------------:| -----:|
