@@ -1,6 +1,6 @@
 # Password_Locker
 ## Author
->BY Manasseh Bundi
+>BY DEV Manasseh Bundi
 
 ## Description
  A simple Python Application which runs on the terminal for the purpose of a user to generate strong passwords and store them for various accounts
