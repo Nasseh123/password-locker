@@ -7,12 +7,12 @@
 
  ## Setup/Installation Requirements
 
-> Clone [This Repository](https://github.com/Nasseh123/password-locker.git) and run the `run.py`file by executing the following commands:-
+> Clone [Thics Repository](https://github.com/Nasseh123/password-locker.git) and run the `run.py`file by executing the following commands:-
 > * `chmod +x run.py` then `python3.6 run.py
 
 ## Technical Requirements
 
-* Contains two classes:- User data and Credential data
+* Ccontains two classes:- User data and Credential data
 * Authenticates users to see their credentials
 * Contains docstrings to document methods and functions
 * Contains a test class for all the classes testing each individual method in a class
